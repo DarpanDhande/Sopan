@@ -1,0 +1,39 @@
+/* Existing CSS styles */
+
+/* Tooltip styles */
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 5;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image {
+  position: relative;
+  width: 2000px;
+  height: 600px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 120%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.image:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.image:hover .tooltip {
+  visibility: visible;
+}
